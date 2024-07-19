@@ -6,10 +6,362 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="/css/homeStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <h1>Hi there</h1>
+    <!-- Nav Section -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/approach">Approach</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/process" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Process
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">About</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true" href="/about">About</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center mx-auto">
+                    <a href="/"><img src="/images/Brand.svg" alt="" class="brandImage"></a>
+                </div>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-dark" type="submit">Let's Collab!</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <hr>
+
+    <div class="container introduction">
+        <div class="row">
+            <div class="col-lg-6 px-5">
+                <h1 class="roboto-bold">Revolutionizing Education in Rural India with Virtual Labs</h1>
+            </div>
+            <div class="col-lg-6">
+                <p class="roboto-regular">This project aims to enhance the scientific curiosity and educational success
+                    of 12th grade students
+                    in rural India through a learning application that is augmented by a virtual Physics lab environment
+                    that surpasses traditional lab experiences.</p>
+                <br>
+                <p class="roboto-regular">Our learner-centric design on Android devices, in sync with NCERT standards,
+                    aims to be adaptable to
+                    local infrastructural realities and scalable for future educational opportunities in richer learning
+                    environments such as a VR environment. We will foster critical thinking skills through the use of
+                    targeted lab exercises and reflection activities. 
+                </p>
+                <button class="btn btn-dark" type="submit">View Live Site</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="video container">
+        <img src="/images/LightBox.svg" alt="">
+    </div>
+
+    <div class="container approach">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="roboto-bold approachTitle">
+                    Our Approach
+                </h1>
+                <p class="roboto-regular">
+                    Our approach is structured around four cycles of minimum viable product (MVP) releases, each
+                    involving stages of discovery, ideation, release, and rediscovery. We leverage insights from
+                    literature reviews, competitive analysis, expert interviews, and user testing to refine our
+                    solutions.
+                </p>
+            </div>
+            <div class="col-lg px-5">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <img src="/images/Timeline.svg" alt="Icon">
+                        </div>
+                        <div class="timeline-content">
+                            <h5 class="roboto-bold">MVP1: OLI Course Module on Galvanometer</h5>
+                            <p class="roboto-regular">To validate educational theories through direct student
+                                interaction and feedback</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <img src="/images/Timeline.svg" alt="Icon">
+                        </div>
+                        <div class="timeline-content">
+                            <h5 class="roboto-bold">MVP2: Interactive Design Prototype</h5>
+                            <p class="roboto-regular">To visualize design concepts, evaluate user experience, and refine
+                                design decisions</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <img src="/images/Timeline.svg" alt="Icon">
+                        </div>
+                        <div class="timeline-content">
+                            <h5 class="roboto-bold">MVP3: Web-based Lab Simulation</h5>
+                            <p class="roboto-regular">To allow students to perform experiments virtually, mimicking the
+                                experience of a
+                                physical lab</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <img src="/images/Timeline.svg" alt="Icon">
+                        </div>
+                        <div class="timeline-content">
+                            <h5 class="roboto-bold">MVP4: Integration into EdX App</h5>
+                            <p class="roboto-regular">To test out cross-platform compatibility and performance
+                                optimization</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container header">
+        <h1 class="roboto-bold processTitle"> Our Process</h1>
+        <hr class="thick-hr">
+    </div>
+
+    <div class="container research">
+        <div class="row">
+            <div class="col-lg-6 my-auto researchContent">
+                <h1 class="roboto-bold">Research</h1>
+                <p class="roboto-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                    enim in eros elementum
+                    tristique.</p>
+                <div class="tags">
+                    <p class="roboto-bold">Tag one</p>
+                </div>
+                <a href="#" class="roboto-regular">View Details <span>&gt</span></a>
+            </div>
+            <div class="col-lg-6">
+                <img src="/images/research.svg" alt="">
+            </div>
+            <hr class="thick-hr processHR">
+        </div>
+    </div>
+
+    <div class="container research">
+        <div class="row">
+            <div class="col-lg-6 my-auto researchContent">
+                <h1 class="roboto-bold">Product</h1>
+                <p class="roboto-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                    enim in eros elementum
+                    tristique.</p>
+                <div class="tagMom">
+                    <div class="tags">
+                        <p class="roboto-bold">Tag one</p>
+                    </div>
+                    <div class="tags">
+                        <p class="roboto-bold">Tag Two</p>
+                    </div>
+                    <div class="tags">
+                        <p class="roboto-bold">Tag Three</p>
+                    </div>
+                </div>
+
+                <a href="#" class="roboto-regular">View Details <span>&gt</span></a>
+            </div>
+            <div class="col-lg-6">
+                <img src="/images/Product.svg" alt="">
+            </div>
+            <hr class="thick-hr processHR">
+        </div>
+    </div>
+    <div class="container research">
+        <div class="row">
+            <div class="col-lg-6 my-auto researchContent">
+                <h1 class="roboto-bold">Design</h1>
+                <p class="roboto-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                    enim in eros elementum
+                    tristique.</p>
+                <div class="tagMom">
+                    <div class="tags">
+                        <p class="roboto-bold">Tag one</p>
+                    </div>
+                    <div class="tags">
+                        <p class="roboto-bold">Tag Two</p>
+                    </div>
+                    <div class="tags">
+                        <p class="roboto-bold">Tag Three</p>
+                    </div>
+                </div>
+                <a href="#" class="roboto-regular">View Details <span>&gt</span></a>
+            </div>
+            <div class="col-lg-6">
+                <img src="/images/Design.svg" alt="">
+            </div>
+            <hr class="thick-hr processHR">
+        </div>
+    </div>
+    <div class="container research">
+        <div class="row">
+            <div class="col-lg-6 my-auto researchContent">
+                <h1 class="roboto-bold">Development</h1>
+                <p class="roboto-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                    enim in eros elementum
+                    tristique.</p>
+                <div class="tagMom">
+                    <div class="tags">
+                        <p class="roboto-bold">Tag one</p>
+                    </div>
+                    <div class="tags">
+                        <p class="roboto-bold">Tag Two</p>
+                    </div>
+                    <div class="tags">
+                        <p class="roboto-bold">Tag Three</p>
+                    </div>
+                </div>
+                <a href="#" class="roboto-regular">View Details <span>&gt</span></a>
+            </div>
+            <div class="col-lg-6">
+                <img src="/images/Development.svg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container impact">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="roboto-bold impactTitle">Our Impact</h1>
+            </div>
+            <div class="col-lg 6">
+                <p class="roboto-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                    enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                    commodo diam libero vitae erat.</p>
+
+                <div class="row impactRow">
+                    <div class="col-lg-6">
+                        <h1 class="roboto-bold">10x </h1>
+                        <p>Increase in productivity</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="roboto-bold">300% </h1>
+                        <p>Return on Investment</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 class="roboto-bold">250k + </h1>
+                        <p>Indian Students</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="roboto-bold">100+</h1>
+                        <p>5-star reviews</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container testimonials">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <h3 class="roboto-bold testimonialsContent">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Suspendisse
+                        varius enim in eros
+                        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
+                        diam libero vitae erat."</h3>
+                    <div class="testimonialsImages" data-bs-interval="2000">
+                        <img src="/images/AvatarImage.svg" alt="">
+                    </div>
+                    <h6 class="roboto-bold">Ken Koedinger</h6>
+                    <p class="roboto-regular">Professor, Carnegie Mellon University</p>
+                </div>
+                <div class="carousel-item ">
+                    <h3 class="roboto-bold testimonialsContent">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Suspendisse varius enim in eros
+                        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
+                        diam libero vitae erat."</h3>
+                    <div class="testimonialsImages">
+                        <img src="/images/AvatarImage.svg" alt="">
+                    </div>
+                    <h6 class="roboto-bold">Bruce McLaren</h6>
+                    <p class="roboto-regular">Professor, Carnegie Mellon University</p>
+                </div>
+                <div class="carousel-item">
+                    <h3 class="roboto-bold  testimonialsContent">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Suspendisse varius enim in eros
+                        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
+                        diam libero vitae erat."</h3>
+                    <div class="testimonialsImages">
+                        <img src="/images/AvatarImage.svg" alt="">
+                    </div>
+                    <h6 class="roboto-bold">Michael Bett</h6>
+                    <p class="roboto-regular">Professor, Carnegie Mellon University</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container contact">
+        <button class="btn btn-dark" type="submit">Let's Collab!</button>
+        <h1 class="roboto-bold my-3">Contact Us</h1>
+        <p class="roboto-regular my-5">Partner with us to make greater education for everyone</p>
+        <img src="/images/Email.svg" alt="">
+        <h4 class="roboto-bold my-3">Email</h4>
+        <p class="roboto-regular">busbrainiacs@gmail.com</p>
+        <hr class="thick-hr my-5">
+    </div>
+
+    <div class="container copyright">
+        <p class="roboto-regular">© 2024 Team BusBrainiacs. All rights reserved.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

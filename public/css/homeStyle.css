@@ -1,3 +1,213 @@
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
-    background-color: aqua;
+    background-color: white;
+}
+
+.navbar {
+    position: relative;
+}
+
+.brandImage {
+    height: 50px;
+    /* Adjust as needed */
+}
+
+.navbar-nav {
+    flex-grow: 1;
+}
+
+.mx-auto {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.introduction {
+    margin-top: 100px;
+}
+
+.video {
+    margin-top: 100px;
+}
+
+.approach {
+    margin-top: 100px;
+}
+
+.approachTitle {
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    margin-top: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1rem;
+    width: 2px;
+    background: #000;
+    height: calc(100% - 3rem);
+    /* Adjust the height to stop at the last item */
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+
+    padding-left: 4rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -2rem;
+    top: 0;
+    background: #fff;
+
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.timeline-content {
+    padding-left: 3rem;
+}
+
+.timeline-icon img {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+    /* margin-top: 0.5rem; */
+}
+
+.header {
+    margin-top: 100px;
+}
+
+.processTitle {
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.thick-hr {
+    border: none;
+    height: 2px;
+    /* Adjust the thickness */
+    background: #000000;
+    margin: 1rem 0;
+    color: #000;
+    /* Adjust spacing as needed */
+}
+
+.research {
+    margin-top: 70px;
+}
+
+.tags {
+    border-radius: 10%;
+    background-color: #F4F4F4;
+    width: 15%;
+    text-align: center;
+    height: 80%;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.tags p {
+    margin-bottom: 0px;
+
+}
+
+a {
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
+.researchContent {
+    padding-right: 100px !important;
+}
+
+.processHR {
+    margin-top: 30px !important
+}
+
+.tagMom {
+    display: flex;
+    justify-content: flex-start;
+    height: auto;
+}
+
+.impact {
+    margin-top: 150px;
+}
+
+.impactTitle {
+    font-size: 50px;
+}
+
+.impactRow {
+    margin-bottom: 20px;
+}
+
+.testimonials {
+    margin-top: 100px;
+}
+
+.testimonialsContent {
+    margin-left: 200px !important;
+    margin-right: 200px !important;
+}
+
+.testimonialsImages {
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+}
+
+.testimonials h6 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.testimonials p {
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.video img {
+    width: 100%;
 }
